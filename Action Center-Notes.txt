@@ -1,0 +1,8 @@
+1) Packages to install: 
+   UiPath.FormActivityLibrary
+   UiPath.Persistence.Activities
+2) Enable action centre in cloud.uipath.com->Admin->Tenants->Tenant Settings->Enable Actions
+3) Project Settings->Enable support persistence
+4) Activities:
+   Create Form Task
+   Wait for Form Task & Resume
