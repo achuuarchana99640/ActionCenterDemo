@@ -1,0 +1,167 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="857.333333333333,2570" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upaf="clr-namespace:UiPath.Persistence.Activities.FormTask;assembly=UiPath.Persistence.Activities" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="60">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
+      <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.Persistence.Activities.Tasks</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="558.666666666667,2505.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="amtClaimed" />
+      <Variable x:TypeArguments="x:String" Name="amtApproved" />
+      <Variable x:TypeArguments="upaf:FormTaskData" Name="taskObj" />
+      <Variable x:TypeArguments="x:String" Name="taskAction" />
+      <Variable x:TypeArguments="x:String" Default="anl@adobe.com" Name="AssignTaskEmail" />
+      <Variable x:TypeArguments="scg:List(upat:TaskAssignmentResponse)" Name="FailedAssignment" />
+      <Variable x:TypeArguments="x:Int64" Name="TaskID" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="496.666666666667,246" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the amount to be reimbursed" Title="Reimbursement">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[amtClaimed]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="ad86854b-d7db-40db-8946-dde068702f8a" DisplayName="Create Form Task" EnableBulkEdit="False" EnableDynamicForms="False" FormLayout="%[{&quot;label&quot;:&quot;Amount claimed by employee&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;in_amtClaimed&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Amount approved for reimbursement&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;out_amtApproved&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;mask&quot;:false,&quot;customClass&quot;:&quot;uipath-button-container&quot;,&quot;tableView&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;type&quot;:&quot;table&quot;,&quot;input&quot;:false,&quot;key&quot;:&quot;key&quot;,&quot;label&quot;:&quot;label&quot;,&quot;rows&quot;:[[{&quot;components&quot;:[{&quot;label&quot;:&quot;Approve&quot;,&quot;disableOnInvalid&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;Approved&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;type&quot;:&quot;button&quot;,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;isResetData&quot;:false}]},{&quot;components&quot;:[{&quot;label&quot;:&quot;Reject&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;Rejected&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]}]],&quot;numRows&quot;:1,&quot;numCols&quot;:6,&quot;reorder&quot;:false}]" FormLayoutGuid="07dcd722-f5b7-4c05-b441-913a2a434942" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="496.666666666667,384" sap2010:WorkflowViewState.IdRef="CreateFormTask_1" TaskCatalog="[&quot;ReimbursementApproval&quot;]" TaskOutput="[taskObj]" TaskPriority="[TaskPriority.Medium]" TaskTitle="Reimbursement form">
+      <upaf:CreateFormTask.FormData>
+        <InArgument x:TypeArguments="x:String" x:Key="in_amtClaimed">[amtClaimed]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_amtApproved">[amtApproved]</OutArgument>
+      </upaf:CreateFormTask.FormData>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </upaf:CreateFormTask>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="496.666666666667,64" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Assigning task for 1st approval" />
+    <upat:AssignTasks TaskUserAssignments="{x:Null}" TimeoutMs="{x:Null}" DisplayName="Assign Tasks" EnableMultipleAssignments="False" FailedTaskAssignments="[FailedAssignment]" sap:VirtualizedContainerService.HintSize="496.666666666667,292" sap2010:WorkflowViewState.IdRef="AssignTasks_1" MigrateV144="False" TaskAssignmentType="[TaskAssignmentType.Assign]" TaskId="[Convert.ToInt64(taskObj.Id)]" UserNameOrEmail="[AssignTaskEmail]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </upat:AssignTasks>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="496.666666666667,64" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Assigning task for 2nd approval" />
+    <upat:AssignTasks TaskUserAssignments="{x:Null}" TimeoutMs="{x:Null}" DisplayName="Assign Tasks" EnableMultipleAssignments="False" FailedTaskAssignments="[FailedAssignment]" sap:VirtualizedContainerService.HintSize="496.666666666667,292" sap2010:WorkflowViewState.IdRef="AssignTasks_2" MigrateV144="False" TaskAssignmentType="[TaskAssignmentType.Assign]" TaskId="[Convert.ToInt64(taskObj.Id)]" UserNameOrEmail="[AssignTaskEmail]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </upat:AssignTasks>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="496.666666666667,64" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Done with both the assignments" />
+    <upaf:WaitForFormTaskAndResume StatusMessage="{x:Null}" TimeoutMs="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait for Form Task and Resume" sap:VirtualizedContainerService.HintSize="496.666666666667,230" sap2010:WorkflowViewState.IdRef="WaitForFormTaskAndResume_1" TaskAction="[taskAction]" TaskInput="[taskObj]" TaskOutput="[taskObj]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </upaf:WaitForFormTaskAndResume>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="496.666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Amount claimed: [&quot;+amtClaimed+&quot;] &amp; Amount approved: [&quot;+amtApproved+&quot;]&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MessageBox>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[taskAction]" sap:VirtualizedContainerService.HintSize="496.666666666667,312" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage x:Key="Approved" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Amount you claimed has been approved&quot;]" />
+      <ui:LogMessage x:Key="Rejected" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Amount you claimed has been rejected&quot;]" />
+    </Switch>
+  </Sequence>
+</Activity>
